@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #F0F2F5;
+    font-family: Helvetica;
+}
+@media (min-width:360px){
+    .fb p{
+        color: #1877F2;
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 6%;
+        margin-bottom: 4%;
+    }
+    .Cuadro{
+        width: 80%;
+        margin-left: 9%;
+    }
+    .Inputs{
+        width: 99%;
+        font-size: 0.9em;
+        height: 32px;
+        margin-bottom: 2%;
+        border-radius: 5px;
+        background-color: #D5D5D5;
+        border-style: none;
+        padding: 8px;
+    }
+    .Submit{
+        width: 105%;
+        border-radius: 5px;
+        height: 45px;
+        background-color: #1877F2;
+        border-style: none;
+        color: white;
+        font-weight: bold;
+        font-size: 1em;
+        
+    }
+    .Span{
+        width: 105%;
+        text-align: center;
+        font-size: 0.9em;
+        margin-top: 4%;
+    }
+    .Olvidar{
+        text-decoration: none;
+        color: #1877F2;
+    }
+    .Linea{
+        width: 105%;
+        margin-top: 4%;
+        
+    }
+    .Display{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .Space{
+        width: 46%;
+      
+    }
+    .O{
+        width: 2%;
+        margin-right: 2%;
+    }
+    .O span{
+       text-align: center;
+    }
+    .Btncrear{
+        width: 50%;
+        margin-left: 29%;
+        margin-top: 3%;
+        
+        
+    }
+    .Crear{
+        height: 45px;
+        font-size: 0.8em;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #00A400;
+        border-style: none;
+        color: white;
+        font-weight: bold;    
+    }
+    .Footer{
+        width: 80%;
+        margin-left:10%;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 10%;
+    }
+    .ES{
+        display: inline-block;
+        width: 49%;
+    }
+    .EN{
+        display: inline-block;
+        width: 49%;
+    }
+    .ES p{
+        color: #4C608D;
+       text-align: center;
+    }
+    .EN p{
+        color: #4C608D;
+        text-align: center;
+     
+    }
+    .Info{
+        margin-top: 5%;
+    }
+    .Info p{
+        text-align: center;
+        color: #848484;
+    }
+   
+
+
+}
