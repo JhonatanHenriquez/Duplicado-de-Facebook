@@ -20,7 +20,7 @@ body{
         margin-left: 9%;
     }
     .Inputs{
-        width: 99%;
+        width: 100%;
         font-size: 0.9em;
         height: 32px;
         margin-bottom: 2%;
@@ -30,7 +30,7 @@ body{
         padding: 8px;
     }
     .Submit{
-        width: 105%;
+        width: 100%;
         border-radius: 5px;
         height: 45px;
         background-color: #1877F2;
@@ -41,7 +41,7 @@ body{
         
     }
     .Span{
-        width: 105%;
+        width: 100%;
         text-align: center;
         font-size: 0.9em;
         margin-top: 4%;
@@ -51,7 +51,7 @@ body{
         color: #1877F2;
     }
     .Linea{
-        width: 105%;
+        width: 100%;
         margin-top: 4%;
         
     }
@@ -90,9 +90,8 @@ body{
     .Footer{
         width: 80%;
         margin-left:10%;
-        position: absolute;
-        bottom: 0;
-        margin-bottom: 10%;
+        
+        
     }
     .ES{
         display: inline-block;
@@ -117,6 +116,18 @@ body{
     .Info p{
         text-align: center;
         color: #848484;
+    }
+    html{
+        height: 100%;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+    }
+    footer{
+        margin-top: auto;
+        margin-bottom: 5%;
     }
    
 

