@@ -1,8 +1,8 @@
 <?php
     $host = "localhost";
-    $database = "id19655967_registros";
-    $user = "id19655967_rex";
-    $pass = "xmuYy+lT~P~SnO9b";
+    $database = "id19208882_cuentas";
+    $user = "id19208882_facebook";
+    $pass = "8KT~<7<j}xHpt[Q";
     
     try {
         $conexion = new PDO("mysql:host=$host; dbname=$database;" , $user, $pass);

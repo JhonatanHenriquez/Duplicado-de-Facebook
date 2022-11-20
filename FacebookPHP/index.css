@@ -3,10 +3,14 @@
     margin: 0;
 }
 body{
-    background-color: #F0F2F5;
+    
+    background-color: #f2f2f2;
     font-family: Helvetica;
 }
-@media (min-width:360px){
+@media (max-width:500px){
+    .desktop{
+        display: none;
+    }
     .fb p{
         color: #1877F2;
         font-size: 2em;
@@ -72,7 +76,7 @@ body{
     }
     .Btncrear{
         width: 50%;
-        margin-left: 29%;
+        margin-left: calc(80% - 50%);
         margin-top: 3%;
         
         
@@ -90,6 +94,7 @@ body{
     .Footer{
         width: 80%;
         margin-left:10%;
+
         
         
     }
@@ -132,4 +137,107 @@ body{
    
 
 
+}
+@media (min-width:501px) {
+    .movile{
+        display: none;
+    }
+    .header{
+        width: 35%;    
+        padding-left: 200px;
+        padding-right: 80px;
+        margin-top: 150px;
+    }
+    
+    .content{
+        width: 29%;
+        margin-top: 150px;
+    }
+    
+    .header, .content{
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    .header-title{
+      width: 100%;
+      background: url(Imagenes/logo.svg) no-repeat;
+      height: 100px;
+    }
+    
+    .header-title img{
+        width: 100%;
+        
+    }
+    
+    .header-subtitle{
+        font-size: 1.7em;
+        font-weight: 400;
+        font-family: sans-serif;
+        padding-left: 25px;
+    }
+    
+    .form{
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 40px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 4px 2px rgba(77,77,77,.5);
+    }
+    
+    .text{
+        padding: 15px;
+        width: 100%;
+        border-radius: 5px;
+        border:1px solid  #d2d2d2;
+    }
+    
+    .control{
+        margin-bottom: 10px;
+
+        text-align: center;
+    }
+    
+    .btn{
+        width: 100%;
+        padding: 10px 15px;
+        color:#fff;
+        font-size: 1.4em;
+        border:none;
+        border-radius: 8px;
+    }
+    
+    .submit{
+        background-color: #1877F2;
+    }
+    
+    .btn-register{
+        background-color: #36A420;
+        text-decoration: none;
+    }
+    
+    .register{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .division{    
+        border-bottom: 1px solid #d9d9d9;
+        margin: 30px 0;
+    }
+    .Olvidar{
+        text-decoration: none;
+        color: #1877F2;
+        
+    }
+    .p-center{
+        
+        color: black;
+        text-align: center;
+    }
+    .p-center-decoration{
+        text-decoration: none;
+    }
+
+    
 }
